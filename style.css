@@ -1,0 +1,179 @@
+/*This is my world*/
+
+*{
+text-decoration: none;
+
+}
+/*font-family*/
+
+@font-face{
+  src:url(fonts/Allerta_Stencil/AllertaStencil-Regular.ttf);
+  font-family: nos;
+}
+@font-face{
+  src:url(fonts/Anton/Anton-Regular.ttf);
+font-family: nos;
+}
+
+/*main code*/
+*{
+  tect-decoration: none;
+}
+body{
+background-color: #ff2828;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 0px;
+margin-bottom: 0px
+}
+
+header{
+ background-color:#ff902a;
+ width: 100%;
+ height: 120px;
+}
+
+header .header-brand{
+font-family:'Anton', sans-serif;
+font-size: 30px;
+font-weight: 900;
+color: #111;
+text-transform: uppercase;
+display: block;
+margin: 0 auto;
+text-align: center;
+    padding: 10px 0;
+
+}
+
+header nav u1{
+display: block;
+margin: 0 auto;
+width: fit-content;
+
+}
+
+header nav u1 li{
+display: inline-block;
+float: left;
+list-style: none;
+padding: 0 5px;
+
+
+}
+header nav u1 li a{
+  font-family: 'Allerta Stencil', sans-serif;
+color: #111;
+margin: 10px;
+display: inline-block;
+text-decoration: none;
+font-size: 10px;
+}
+
+header .header-mama {
+display: none;
+}
+/*INDEX*/
+
+
+.index-banner{
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #ff2828;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+}
+.vertical-center{
+  display: table-cell;
+    vertical-align: middle;
+}
+.index-banner h2 {
+ font-family:'Anton', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+  }
+
+.index-boxlink-1{
+  display: grid;
+  margin: 10px;
+  width: calc(100% - 20px);
+  height: 100%;
+  background-color: #f2f2f2;
+}
+
+/*effect*/
+.effect {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -webkit-perspective: 400;
+  -moz-perspective: 400;
+  -ms-perspective: 400;
+  -o-perspective: 400;
+  perspective: 400;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  color: rgba(0, 0, 0);
+  line-height: 1em;
+  backface-visibility: hidden;
+}
+.effect:before, .effect:after {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transform-origin: center center 0 50%;
+  -moz-transform-origin: center center 0 50%;
+  -ms-transform-origin: center center 0 50%;
+  -o-transform-origin: center center 0 50%;
+  transform-origin: center center 0 50%;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  content: attr(data-effect);
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+.effect.box-fill-skew {
+  border: solid 2px rgba(0, 0, 0);
+  padding: 6px 10px;
+  overflow: hidden;
+}
+.effect.box-fill-skew:after {
+  -webkit-transform: skewX(45deg);
+  -moz-transform: skewX(45deg);
+  -ms-transform: skewX(45deg);
+  -o-transform: skewX(45deg);
+  transform: skewX(45deg);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+  top: 0;
+  left: 50%;
+  margin-left: 0%;
+  bottom: 0;
+  width: 0%;
+  color: transparent;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+.effect.box-fill-skew:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.effect.box-fill-skew:hover:after {
+  margin-left: -50%;
+  width: 100%;
+}
